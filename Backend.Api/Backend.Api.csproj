@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BackendTest.Application.Models\BackendTest.Application.Models.csproj" />
+    <ProjectReference Include="..\BackendTest.Application.Service.Interfaces\BackendTest.Application.Service.Interfaces.csproj" />
+    <ProjectReference Include="..\BackendTest.Application.Service\BackendTest.Application.Service.csproj" />
+    <ProjectReference Include="..\BackendTest.Application.Validator\BackendTest.Application.Validator.csproj" />
+    <ProjectReference Include="..\BackendTest.Infrastructure.Database\BackendTest.Infrastructure.Database.csproj" />
+  </ItemGroup>
+
+</Project>

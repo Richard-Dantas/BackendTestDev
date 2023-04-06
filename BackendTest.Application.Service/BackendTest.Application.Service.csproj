@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BackendTest.Application.Models\BackendTest.Application.Models.csproj" />
+    <ProjectReference Include="..\BackendTest.Application.Service.Interfaces\BackendTest.Application.Service.Interfaces.csproj" />
+    <ProjectReference Include="..\BackendTest.Application.Validator.Interfaces\BackendTest.Application.Validator.Interfaces.csproj" />
+    <ProjectReference Include="..\BackendTest.Domain.Core\BackendTest.Domain.Core.csproj" />
+    <ProjectReference Include="..\BackendTest.Domain.Database.Interfaces\BackendTest.Domain.Database.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
